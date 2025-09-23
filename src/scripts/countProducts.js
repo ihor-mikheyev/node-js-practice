@@ -1,8 +1,8 @@
 import { readProducts } from './readProducts.js';
 
-export const getAllProducts = async () => {
+const countProducts = async () => {
   const data = await readProducts();
-  console.log(data);
+  console.log(data.length);
 };
 
-getAllProducts();
+countProducts();
